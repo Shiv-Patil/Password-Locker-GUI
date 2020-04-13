@@ -23,7 +23,6 @@ from cryptography.fernet import Fernet, InvalidToken
 import json
 import pyperclip
 import string
-from kivy.clock import mainthread
 
 Window.clearcolor = (0.188, 0.188, .188, 1)
 Window.maximize()
