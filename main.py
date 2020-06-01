@@ -61,7 +61,7 @@ class WindowManager(ScreenManager):
 		'''
 		Function to generate the decrypting key using master password.
 		'''
-		self.salt = b"\xa9\x1ei\xece+\x14\x7f\x003\x91\xc1No\x0e\xd1\xa1]\x1a'm\xfe\n\xf3\x8f2\x93\xeb\x0e\xcb\xf8w\xb1\xe4Kv\xdbZ\xd6\x06&!#/\x06=p9\xc8\xbc\xd3\xdfX\xd9/\xa8P\xd0;gf\xcc\xa2\xe0"
+		self.salt = b'yW4\x13m\xb0M\x8a\x84%\nAY={\x16' #random 16 length salt using secrets.token_bytes(16)  
 		self.kdf = PBKDF2HMAC(
 			algorithm=hashes.SHA256(),
 			length=32,
